@@ -42,3 +42,5 @@ function solution(N, A) {
 }
 console.log(solution(5, [3, 4, 4, 6, 1, 4, 4]));
 // console.log(solution())
+
+// (3, 2, 2, 4, 2)
