@@ -1,6 +1,7 @@
 // https://programmers.co.kr/learn/courses/30/lessons/42842?language=javascript
 
 function solution(brown, yellow) {
+<<<<<<< HEAD
 	// 가로 + 세로
 	const sum = Math.floor(brown / 2) + 2;
 
@@ -13,6 +14,19 @@ function solution(brown, yellow) {
 			return [sum - i, i];
 		}
 	}
+=======
+  let answer = [];
+  const sum = brown + yellow;
+
+  for (let height = 3; height <= brown; height++) {
+    if (sum % height === 0) {
+      let weight = sum / height; // 가로길이
+      console.log(sum, weight, height);
+      if ((height - 2) * (weight - 2) === yellow) return [weight, height];
+    }
+  }
+  return answer;
+>>>>>>> 41f3a56b9bcd08577f9c66b16b17a229599ba664
 }
 // console.log(solution(10, 2));
 // console.log(solution(8, 1));
