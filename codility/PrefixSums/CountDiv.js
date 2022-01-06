@@ -1,6 +1,11 @@
 function solution(A, B, K) {
   if (A === 0) return parseInt(B / K) + 1;
   else return parseInt(B / K) - parseInt((A - 1) / K);
+
+  console.log(B / K, A - 1, (A - 1) / K);
+  if (A === 0) return B / K + 1;
+  else return B / K - (A - 1) / K;
+  // B전에 나오는 K의 배수 - A 이전에 나오는 K의 배수
 }
 
 // O(1)
