@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>홈페이지다!!</h1>
+      <h1>홈페이지다!! 버전3</h1>
       <Counter />
       <Image
         src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
