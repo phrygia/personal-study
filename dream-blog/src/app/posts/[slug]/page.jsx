@@ -3,6 +3,15 @@ import PostContent from "@/components/PostContent";
 import { getPostData } from "@/service/posts";
 import Image from "next/image";
 import React from "react";
+import { Metadata } from "next";
+
+export const generateMetadata = async ({ params: { slug } }) => {
+  const { title, description } = await getPostData(slug);
+  return {
+    title,
+    description,
+  };
+};
 
 const PostPage = async ({ params: { slug } }) => {
   const post = await getPostData(slug);
