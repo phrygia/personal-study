@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch './*.ts' --exec 'ts-node' array.ts"
+  }
+}
