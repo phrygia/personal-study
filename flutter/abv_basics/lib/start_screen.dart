@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 // StatelessWidget(상태비저장), StatefulWidget
 class StartScreen extends StatelessWidget {
@@ -29,10 +31,13 @@ class StartScreen extends StatelessWidget {
           const SizedBox(
             height: 80,
           ),
-          const Text(
+          Text(
             'Learn flutter the fun Way!',
-            style: TextStyle(
-                color: Color.fromARGB(255, 237, 223, 252), fontSize: 24),
+            style: GoogleFonts.lato(
+              color: const Color.fromARGB(255, 237, 223, 252),
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
           ),
           const SizedBox(
             height: 30,
